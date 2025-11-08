@@ -8,18 +8,81 @@
 
     <!-- CSS External file link -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
     <!-- header -->
-    <header></header>
+    <header class="main-header">
+        <!--logo-->
+        <div class="logo"></div>
+
+        <!--navigation menu-->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-portofolio-page">Our profile</a>
+            <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Massage us</a>
+        </nav>
+    </header>
+
+    <hr/>
 
     <!-- main -->
-    <main></main>
+    <main>
+        <!--Home Page-->
+        <section id="home-page" class="min-h-[500px] text-center">
+            <h2 class="text-tl font-bold" id="welcome-speech">Welcome to our website</h2>
+            <p class="mt-2">we are glad to have. Explore our services and offerings</p>
+        </section>
+
+        <!--Our Portofolio Page-->
+        <section id="our-portofolio-page" class="min-h-[500px] text-center">
+            <h2 class="text-tl font-bold">About Ezad Company</h2>
+            <p class="mt-2">Ezad Company is dedicated to providing top-notch services in various domains. Our team of experts is committed to excellence and customer satisfaction.</p>
+        </section>
+
+        <!--PortofolioPage-->
+        <section id="portofolio-page" class="min-h-[500px] text-center">
+            <h2 class="text-tl font-bold">Our Portofolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
+
+        <!--Message Us Page-->
+        <section id="message-us-page" class="min-h-[500px] max-w-lg mx-auto">
+            <header>
+            <h2 class="text-tl font-bold">Massage Us</h2>
+            <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you promptly.</p>
+            </header>
+<br>
+            <form>
+                <div class="mb-4">
+                    <label class for="name">Name:</label>
+                    <input class="w-full p-2 border rounder" type="text" id="name" name="name" required="home-page">
+                </div>
+                <div>
+                    <label class for="email">Email:</label>
+                    <input class="w-full p-2 border rounder" type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label class for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounder" type="message" id="message" name="message" rows="message" 
+                    required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="submit">send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <hr/>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <P class="text-center p=4">2025 Ezad Company. All Right reserved</P>
+    </footer>
 
     <!-- JS External file link -->
     <script src="js/script.js"></script>
